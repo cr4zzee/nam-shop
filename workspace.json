@@ -2,6 +2,14 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "user": "apps/user"
+    "admin": "apps/admin",
+    "api-database": "libs/api/database",
+    "order": "apps/order",
+    "production": "apps/production",
+    "ui-admin": "apps/ui-admin",
+    "ui-admin-e2e": "apps/ui-admin-e2e",
+    "user": "apps/user",
+    "website": "apps/website",
+    "website-e2e": "apps/website-e2e"
   }
 }

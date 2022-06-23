@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  postgresql:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=tung
+      - POSTGRES_PASSWORD=password123
+      - POSTGRES_DB=nam-shop
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data/pgdata
